@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:rgba(255, 255, 255, 0.849) ;
+}
+
+.container{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: aquamarine;
+    border: 10px solid rgba(82, 26, 26, 0.521);
+    border-radius: 50%;
+}
+
+.clock{
+    position: absolute;
+    top: 165px;
+    left: 165px;
+    width: 23px;
+    height: 23px;
+    /* background-color: aliceblue; */
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    
+}
