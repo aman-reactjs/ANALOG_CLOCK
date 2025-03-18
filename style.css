@@ -20,11 +20,64 @@ body{
     position: absolute;
     top: 165px;
     left: 165px;
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     /* background-color: aliceblue; */
     margin: auto;
     background-color:rgba(0, 0, 0, 0.8);
     border-radius: 50%;
     
 }
+.createdBy{
+    width: 80px;
+    height: auto;
+    text-align: center;
+    font-style: italic;
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    opacity: 0.15;
+    font-family: cursive ;
+    color: rgb(87, 69, 37) ;
+}
+
+.numbers {
+    width: 15px;
+    height: 35px;
+    color: rgba(128, 29, 29, 0.925);
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+    /* Position numbers using CSS Variables */
+    --angle: calc((var(--i) * 30deg) - 90deg); 
+    top: calc(50% + 160px * sin(var(--angle)));
+    left: calc(50% + 160px * cos(var(--angle)));
+  }
+
+.hand{
+    /* width: 7px;
+    height: 130px; */
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.seconds-hand{
+    background-color: rgb(223, 32, 32);
+    width: 4px;
+    height: 130px;
+}
+.minutes-hand{
+    background-color: black;
+    width: 6px;
+    height: 110px;
+}
+
+.hours-hand{
+    background-color: rgb(26, 89, 161);
+    width: 7px;
+    height: 90px;
+}
+
