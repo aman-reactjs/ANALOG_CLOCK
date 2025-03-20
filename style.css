@@ -4,16 +4,21 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color:rgba(255, 255, 255, 0.849) ;
+    background-color:#e6e1e1;
 }
 
 .container{
     position: relative;
     width: 350px;
     height: 350px;
-    background-color: aquamarine;
-    border: 10px solid rgba(82, 26, 26, 0.521);
+    background-color: rgba(32, 37, 36, 0.5);
+    /* border: 10px solid rgba(82, 26, 26, 0.521); */
     border-radius: 50%;
+    box-shadow: 0px 10px 30px rgba(49, 195, 221, 0.5); 
+    transform: translateY(-5px); 
+    /* transition: all 0.3s ease-in-out; */
+    backdrop-filter: blur(10px);
+    
 }
 
 .clock{
@@ -33,11 +38,12 @@ body{
     height: auto;
     text-align: center;
     font-style: italic;
-    background-color: black;
+    /* background-color: black; */
     position: absolute;
-    top: 80px;
-    left: 140px;
-    opacity: 0.15;
+    font-size: 15px;
+    top: 60px;
+    left: 137px;
+    /* opacity: 0.7; */
     font-family: cursive ;
     color: rgb(87, 69, 37) ;
 }
@@ -45,39 +51,43 @@ body{
 .numbers {
     width: 15px;
     height: 35px;
-    color: rgba(128, 29, 29, 0.925);
+    color: rgba(202, 191, 191, 0.925);
     font-size: 30px;
     font-weight: bold;
     position: absolute;
     transform: translate(-50%, -50%);
     
-    /* Position numbers using CSS Variables */
     --angle: calc((var(--i) * 30deg) - 90deg); 
     top: calc(50% + 160px * sin(var(--angle)));
     left: calc(50% + 160px * cos(var(--angle)));
   }
 
 .hand{
-    /* width: 7px;
-    height: 130px; */
     position: absolute;
-    top: 12px;
-    left: 10px;
+    top: 14px;
+    left: 11px;
 }
+.hours-hand{
+    background-color: rgb(26, 89, 161);
+    width: 4px;
+    height: 90px;
+    transform-origin: top;
+
+}
+.minutes-hand{
+    background-color: black;
+    width: 4px;
+    height: 115px;
+    transform-origin: top;
+
+}
+
 .seconds-hand{
     background-color: rgb(223, 32, 32);
     width: 4px;
     height: 130px;
-}
-.minutes-hand{
-    background-color: black;
-    width: 6px;
-    height: 110px;
+    transform-origin: top;
+
 }
 
-.hours-hand{
-    background-color: rgb(26, 89, 161);
-    width: 7px;
-    height: 90px;
-}
 
