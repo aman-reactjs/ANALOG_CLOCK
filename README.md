@@ -14,7 +14,7 @@ A simple Analog Clock designed using **HTML**, **CSS**, and **JavaScript**.
   
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/analog-clock.git
+  https://github.com/aman-reactjs/ANALOG_CLOCK.git
     ```
 
 2. **Navigate to the project folder:**
